@@ -10,4 +10,4 @@ with various transliterations in progress.
 
 The process is not at all being conducted in a Clojiure-like mannter; rather core.clj is aimed at a working project - Wave Theory of Sound - and exceptions which occur during *lein run* become the targets for transliteration.
 
-Collaboration on this project are invited.
+Collaboration on this project is invited.
