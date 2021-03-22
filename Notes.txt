@@ -1,0 +1,42 @@
+PROJECT
+  Transliteration of Paul Tbagard's PI in CommonLisp to Clojure
+RESOURCES
+  PI
+    Source code
+     http://cogsci.uwaterloo.ca/CoherenceCode/PI.html
+  Transliteration
+    https://dzone.com/articles/common-lisps-consp-and-listp-in-clojure
+    https://stackoverflow.com/questions/595556/porting-common-lisp-code-to-clojure
+    https://cognitect.com/blog/2008/9/16/pcl-clojure
+    https://riptutorial.com/clojure/example/19536/basic-channel-operations--creating--putting--taking--closing--and-buffers-
+
+OBSERVATIONS
+  PI.html is really a concatination of several files. Each of those should be either a clj file or a new
+    path
+      One file Each
+  CAN clojure return a Map which would be equivalent to my IResult?
+    I think so
+LOG
+  20210320
+    Moving to Github with Paul Thagard's kind permission
+  20210319
+    Started project with lein in VSCode
+    Gathering resources
+    It's tempting to just copy the lisp files directly into clj files then transliterate from
+      there
+    BUG: core.clj is not compiling load_all
+  20210320
+    added pi.lisp
+    added wts.clj - the wave theory of sound data
+    wts.clj compiles but does not run 
+      Needs Transliteration
+    APPEARS that we don't need core.clj load_all because just making wts.clj a dependency
+      on core.clj gets it started.
+      Then all you need to do is transliterate, add dependencies, which brings them in
+    (loop [index 0]
+  (if (> (inc index) (count str))
+  nil
+  (if (= (nth str index) char)
+    true
+    (recur (inc index)))))
+   

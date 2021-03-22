@@ -1,0 +1,10 @@
+
+
+PI (Processes of Induction) LISP code. October, 2001
+
+See P. Thagard, Computational Philosophy of Science, 1988.
+
+NOTE:  PI is copyright (c) 1988 Paul Thagard.  Permission is 
+granted to use it for research purposes, but denied for
+commercial and military purposes.
+
